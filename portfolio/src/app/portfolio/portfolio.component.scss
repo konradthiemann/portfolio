@@ -9,7 +9,7 @@
     display: flex;
 }
 
-.description-left {
+.description{
     width: calc(50% - 100px);
     padding-top: 80px;
     text-align: right;
@@ -62,7 +62,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    // padding: 15px 30px;
     gap: 10px;
     width: 140px;
     height: 60px;
@@ -72,4 +71,12 @@
 
 .img {
     padding: 0 100px;
+}
+
+.flex-reverse {
+    flex-direction: row-reverse !important;
+}
+
+.text-align{
+    text-align: left !important;
 }
