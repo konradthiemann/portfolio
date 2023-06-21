@@ -1,0 +1,75 @@
+.headline-section{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.single-portfolio {
+    width: calc(100% - 200px);
+    padding: 0 100px;
+    display: flex;
+}
+
+.description-left {
+    width: calc(50% - 100px);
+    padding-top: 80px;
+    text-align: right;
+}
+
+.technology-container {
+    display: inline-flex;
+    
+
+    p {
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 120%;
+        color: #70E61C;
+
+    }
+}
+
+.description-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.url-container {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 375px;
+}
+
+.test-url {
+    display: flex;
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #9747FF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.git-url {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // padding: 15px 30px;
+    gap: 10px;
+    width: 140px;
+    height: 60px;
+    border: 1px solid #70E61C;
+    border-radius: 10px;
+}
+
+.img {
+    padding: 0 100px;
+}

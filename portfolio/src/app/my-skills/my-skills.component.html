@@ -1,0 +1,12 @@
+<div class="img-container">
+    <div class="single-skill" *ngFor="let skill of skills; let i = index">
+        <img  src="{{skill.url}}" alt="">
+        <h3>{{skill.name}}</h3>
+    </div>
+</div>
+<div class="description-skills">
+    <h1>My Skills</h1>
+    <p>I have gained experience in building projects with various front end technologies and concepts.</p>
+    <button (click)="doSmthg()">Get in touch</button>
+</div>
+<div class="decoration-stripe"></div>

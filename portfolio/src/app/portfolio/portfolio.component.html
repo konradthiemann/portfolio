@@ -1,0 +1,28 @@
+<div class="headline-section">
+    <div class="decoration-stripe"></div>
+    <h1>Portfolio</h1>
+    <p>This page is a sample of my work - please feel free to try them out.</p>
+    <div class="decoration-stripe"></div>
+</div>
+<div class="portfolio-section">
+    <div *ngFor="let project of projects; let i = index" [imgLeft]="i%1 == 0" class="single-portfolio">
+        <div class="description-left">
+            <h4>{{project.name}}</h4>
+            <div class="technology-container">
+                <p class="tecnologies-text" *ngFor="let technology of project.technologies">{{technology}}</p>
+            </div>
+            <p class="description-text">{{project.description}}</p>
+            <div class="url-container">
+                <a class="test-url" href="{{project.url}}" target="_blank">Live test</a>
+                <a class="git-url" href="{{project.url[1]}}" target="_blank">Git</a>
+            </div>
+        </div>
+        <div class="img">
+            <img src="{{project.img}}" alt="">
+        </div>
+    </div>
+</div>
+
+
+<!-- flex-direction: row-reverse; -->
+<!-- text-align: left; -->
