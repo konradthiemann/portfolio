@@ -28,19 +28,14 @@
     h1 {
         margin-bottom: 30px;
     }
+}
 
-    button {
-        width: 200px;
-        height: 58px;
-        background: #70E61C;
-        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        color: #FFFFFF;
-        font-size: 23px;
-        border: none;
-        margin: 70px 100px 0 0;
-        cursor: pointer;
-    }
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
 }
 
 .decoration-stripe {

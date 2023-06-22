@@ -24,6 +24,7 @@ h2 {
 
 h3 {
     color: #FFFFFF;
+    margin: 0;
 }
 
 h4 {
@@ -41,4 +42,42 @@ p {
     line-height: 19px;
 
     color: #FFFFFF;
+}
+
+input {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+textarea {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.button-green{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #70E61C;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    cursor: pointer;
+    padding: 15px 30px 15px 30px;
+    transition: 200ms ease-in-out;
+    &:hover {
+        background: #9747FF;
+        transition: 200ms ease-in-out;
+        width: 220px;
+        height: 70px;
+    }
 }
