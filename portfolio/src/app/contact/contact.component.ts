@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class ContactComponent {
 
   post = {
-    endPoint: 'https://konrad-thiemann.de/send_mail.php/',
+    endPoint: 'http://konrad-thiemann.de/send_mail.php/',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
