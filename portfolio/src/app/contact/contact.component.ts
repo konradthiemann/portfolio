@@ -34,7 +34,9 @@ export class ContactComponent {
   constructor(private http: HttpClient) { }
 
   onSubmit(ngForm: any) {
+    
     if (this.contactForm.valid) {
+      
       let data = {
         name: this.contactForm.value.name,
         email: this.contactForm.value.email,
@@ -55,6 +57,7 @@ export class ContactComponent {
         });
     } else {
       this.throwErrors()
+      console.log("test");
     }
   }
 
