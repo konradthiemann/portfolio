@@ -1,0 +1,43 @@
+app-intro{
+    position: relative;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    top: 110px;
+}
+
+app-about-me{
+    display: flex;
+    position: relative;
+    z-index: 2;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 110px;
+}
+
+app-my-skills{
+    display: flex;
+    position: relative;
+    z-index: 3;
+    justify-content: space-between;
+    padding: 280px 100px 0;
+}
+
+app-portfolio{
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+app-contact{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+}

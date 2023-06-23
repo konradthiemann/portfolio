@@ -1,0 +1,13 @@
+.content-container {
+    position: relative;
+    top: 110px;
+    padding: 0 100px;
+    margin-top: 60px;
+    height: calc(100vh - 240px);
+    overflow-y: hidden;
+
+    a{
+        color: #70E61C;
+        text-decoration: none;
+    }
+}

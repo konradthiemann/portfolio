@@ -12,6 +12,8 @@ import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { FooterComponent } from './footer/footer.component';
     PortfolioComponent,
     ContactComponent,
     FooterComponent,
+    ImprintComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
