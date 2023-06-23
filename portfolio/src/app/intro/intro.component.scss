@@ -48,18 +48,6 @@
     display: flex;
 }
 
-// .curve-container {
-//     position: absolute;
-//     width: 100%;
-//     top: 380px;
-//     z-index: 2;
-
-//     img {
-//         width: 100%;
-//         z-index: 2;
-//     }
-// }
-
 .curve{
     position: absolute;
     bottom: -246px;
@@ -105,28 +93,6 @@
         text-decoration: none;
         color: #FFFFFF;
         cursor: pointer;
-    }
-}
-
-.social-button-container {
-    width: 280px;
-    display: flex;
-    justify-content: space-around;
-    height: 60px;
-    align-items: center;
-
-    img {
-        margin: 0 20px;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-
-        &:hover {
-            width: 50px;
-            height: 50px;
-            margin: 0 15px;
-            transition: 200ms ease-in-out;
-        }
     }
 }
 
