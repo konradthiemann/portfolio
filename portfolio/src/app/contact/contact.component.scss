@@ -10,6 +10,18 @@
     width: 480px;
 }
 
+// input:-webkit-autofill,
+// input:-webkit-autofill:hover, 
+// input:-webkit-autofill:focus, 
+// input:-webkit-autofill:active{
+//     -webkit-box-shadow: 0 0 0 0 white inset !important;
+//     background-color: #141D2F;
+// }
+
+// input:-internal-autofill-selected {
+//     background-color: rgba($color: #000000, $alpha: 0);
+// }
+
 .contact-form{
     width: 620px;
     margin-top: 40px;
@@ -20,9 +32,12 @@
         align-items: center;
         width: 100%;
         height: 100%;
+        // background-color: rgba(0,0,0,0);
 
         input{
-            background-color: rgba($color: #000000, $alpha: 0);
+            outline: none;
+            color-scheme: dark;
+            background-color: #141D2F;
             width: 100%;
             height: 50px;
             margin-bottom: 20px;
@@ -37,11 +52,21 @@
                 font-weight: 400;
             }
             &:hover{
-                border: 1px solid #70E61C;
+                border: 1px solid #70E61C !important;
+                background-color: rgba(0, 0, 0, 0);
             }
             &:focus{
-                border: 1px solid #70E61C;
+                border: 1px solid #70E61C !important;
+                background-color: rgba(0, 0, 0, 0);
             }
+            &:active{
+                border: 1px solid #70E61C !important;
+                background-color: rgba(0, 0, 0, 0);
+            }
+            // &.ng-touched{
+            //     border: 1px solid #70E61C !important;
+            //     background-color: rgba(0, 0, 0, 0);
+            // }
         }
 
         textarea{
@@ -69,3 +94,7 @@
         }
     }
 }
+
+input:-webkit-autofill{
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }

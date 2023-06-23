@@ -48,16 +48,23 @@
     display: flex;
 }
 
-.curve-container {
-    position: absolute;
-    width: 100%;
-    top: 380px;
-    z-index: 2;
+// .curve-container {
+//     position: absolute;
+//     width: 100%;
+//     top: 380px;
+//     z-index: 2;
 
-    img {
-        width: 100%;
-        z-index: 2;
-    }
+//     img {
+//         width: 100%;
+//         z-index: 2;
+//     }
+// }
+
+.curve{
+    position: absolute;
+    bottom: -246px;
+    width: 100%;
+    height: 650px;
 }
 
 .lower-section {

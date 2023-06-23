@@ -6,11 +6,11 @@
         <p>Need a Frontend developer? <b>contact me!</b></p>
     </div>
     <div class="contact-form">
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-            <button class="button-green">Send Message :)</button>
+        <form (ngSubmit)="onSubmit(formContact)" [formGroup]="contactForm" #formContact="ngForm" >
+            <input formControlName="name" name="name" type="text" placeholder="Name">
+            <input formControlName="email" name="email" type="email" placeholder="Email">
+            <textarea formControlName="message" name="message" cols="30" rows="4" placeholder="Message"></textarea>
+            <button [disabled]="emailSent" type="submit" translate class="button-green">Send Message :)</button>
         </form>
     </div>
 </div>
