@@ -181,6 +181,11 @@ input:-webkit-autofill {
 @keyframes messageSentAnimation {
     0% {
         opacity: 0;
+        z-index: 0;
+    }
+    10%{
+        opacity: 1;
+        z-index: 0;
     }
     24%{
         opacity: 1;
@@ -192,8 +197,12 @@ input:-webkit-autofill {
         z-index: 0;
         top: 30%;
     }
+    99%{
+        z-index: 0;
+    }
     100% {
         opacity: 0;
         top: 0;
+        z-index: -1;
     }
 }
