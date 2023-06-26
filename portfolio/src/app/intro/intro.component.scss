@@ -1,6 +1,6 @@
 .upper-section {
-    z-index: 3;
-    padding: 0 100px;
+    z-index: 1;
+    padding: 110px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,7 +8,7 @@
 
 .picture-container {
     display: flex;
-    height: 1000px;
+    height: 800px;
 
     img {
         z-index: 1;
@@ -50,9 +50,10 @@
 
 .curve {
     position: absolute;
-    bottom: -246px;
+    bottom: -88px;
     width: 100%;
     height: 650px;
+    z-index: 2;
 }
 
 .lower-section {

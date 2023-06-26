@@ -1,6 +1,5 @@
 .headline-section {
     position: relative;
-    margin-top: 200px;
     margin-bottom: 100px;
 }
 
@@ -123,4 +122,19 @@
 
 .flex-inherit {
     flex-direction: inherit !important;
+}
+
+.shadow-one{
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+    left: -215px;
+}
+
+.shadow-two{
+    position: absolute;
+    bottom: 0;
+    width: 460px;
+    transform: rotate(65deg);
+    right: -190px;
 }

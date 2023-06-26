@@ -2,18 +2,35 @@
 <div class="contact-container">
     <div class="contact-description">
         <h3>Got a problem to solve?</h3>
-        <p>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.</p>
+        <p>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your
+            projects with my work.</p>
         <p>Need a Frontend developer? <b>contact me!</b></p>
     </div>
     <div class="contact-form">
-        <form (ngSubmit)="onSubmit(formContact)" [formGroup]="contactForm" #formContact="ngForm" >
-            <input formControlName="name" name="name" type="text" placeholder="Name">
-            <input formControlName="email" name="email" type="email" placeholder="Email">
-            <textarea formControlName="message" name="message" cols="30" rows="4" placeholder="Message"></textarea>
+        <form (ngSubmit)="onSubmit(formContact)" [formGroup]="contactForm" #formContact="ngForm">
+
+            <input [ngClass]="{'invalid': nameValid == 2, 'valid': nameValid == 1}" formControlName="name" name="name"
+                type="text" placeholder="Name" id="inputName" >
+            <p [ngClass]="{'opacity': nameValid == 2}" class="error">Your name is required!</p>
+
+            <input [ngClass]="{'invalid': emailValid == 2, 'valid': emailValid == 1}" formControlName="email"
+                name="email" type="email" placeholder="Email" id="inputEmail" >
+            <p [ngClass]="{'opacity': emailValid == 2}" class="error">Please enter a valid email address!</p>
+
+            <textarea [ngClass]="{'invalid': messageValid == 2, 'valid': messageValid == 1}" formControlName="message"
+                name="message" cols="30" rows="4" placeholder="Message" id="inputMessage"></textarea>
+            <p [ngClass]="{'opacity': messageValid == 2}" class="error">Please enter a message with atleast 10
+                characters!
+            </p>
+
             <div class="submit-button-container">
-                <button [disabled]="emailSent" type="submit" translate class="button-green">Send Message :)</button>
+                <button [disabled]="emailSent" type="submit" class="button-green">Send Message :)</button>
             </div>
         </form>
+        <div class="message-send-container" [ngClass]="{'message-sent-animation': emailSent }">
+            <h3 translate>Email was sent successfully!</h3>
+            <p translate>I will send you an answer as soon as possible!</p>
+        </div>
     </div>
 </div>
 
@@ -22,3 +39,5 @@
 </div>
 
 <div class="decoration-stripe"></div>
+
+<img class="shadow" src="../../assets/img/Purple shadow footer V2.svg">

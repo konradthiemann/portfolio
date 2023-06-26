@@ -13,6 +13,7 @@ export class HeaderComponent {
       document.getElementById('link' + i)!.style.color = 'white';
       links[i].classList.remove('active');
     }
+    console.log(links);
     links[num].classList.add('active');
     document.getElementById('link' + num)!.style.color = '#70E61C';
   }

@@ -46,6 +46,6 @@
 }
 
 .active{
-    opacity: 1;
+    opacity: 1 !important;
     transition: 200ms ease-in-out;
 }
