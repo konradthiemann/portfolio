@@ -17,7 +17,7 @@
 }
 
 .intro-right {
-    z-index: 1;
+    z-index: 2;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -49,11 +49,12 @@
 }
 
 .curve {
+    left: 0;
     position: absolute;
-    bottom: -88px;
+    top: 648px;
     width: 100%;
     height: 650px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .lower-section {
@@ -127,5 +128,265 @@
         height: 16px;
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media (max-width: 1800px) {
+    .text-section {
+        h2 {
+            font-size: 54px;
+        }
+
+        h1 {
+            font-size: 80px;
+        }
+
+        p {
+            font-size: 48px;
+        }
+    }
+
+    .picture-container {
+        height: 750px;
+    }
+
+    .curve {
+        top: 482px;
+        height: 934px;
+    }
+}
+
+@media (max-width: 1640px) {
+    .text-section {
+        h2 {
+            font-size: 44px;
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+
+        p {
+            font-size: 38px;
+        }
+    }
+
+    .picture-container {
+        height: 700px;
+    }
+
+    .curve{
+        top: 435px;
+    }
+}
+
+@media (max-width: 1490px) {
+    .text-section {
+        h2 {
+            font-size: 34px;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        p {
+            font-size: 28px;
+        }
+    }
+
+    .picture-container {
+        height: 700px;
+    }
+}
+
+@media (max-width: 1375px) {
+    .text-section {
+        h2 {
+            font-size: 24px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .picture-container {
+        height: 650px;
+    }
+
+    .curve {
+        top: 319px;
+        height: 1100px;
+        width: 120%;
+    }
+}
+
+@media (max-width: 1225px) {
+
+    // .text-section{
+    //     h2{
+    //         font-size: 19px;
+    //     }
+    //     h1{
+    //         font-size: 45px;
+    //     }
+    //     p{
+    //         font-size: 13px;
+    //     }
+    // }
+    .picture-container {
+        height: 600px;
+    }
+    .upper-section{
+        flex-direction: row;
+    }
+    .curve {
+        top: 300px;
+        height: 1020px;
+        bottom: -101px;
+    }
+}
+
+@media (max-width: 1190px) {
+    .text-section {
+        h2 {
+            font-size: 54px;
+        }
+
+        h1 {
+            font-size: 80px;
+        }
+
+        p {
+            font-size: 48px;
+        }
+    }
+    .upper-section{
+        flex-direction: column;
+        // padding-top: 0;
+        overflow: hidden;
+    }
+    .profile-shadows{
+        left: 50%;
+        transform: translateX(-50%);
+        top: 106px;
+        width: 1013px;
+    }
+    
+    .curve{
+        height: 1063px;
+        z-index: 0;
+        width: 2031px;
+        top: 286px;
+    }
+    .profile-shadows{
+        z-index: -1;
+    }
+    .picture-container{
+        margin-bottom: 80px;
+    }
+    .scroll-down-section{
+        display: none;
+    }
+}
+
+@media (max-width: 1080px) {
+    .text-section {
+        h2 {
+            font-size: 44px;
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+
+        p {
+            font-size: 38px;
+        }
+    }
+}
+
+@media (max-width: 965px) {
+    .text-section {
+        h2 {
+            font-size: 24px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .text-section {
+        h2 {
+            font-size: 19px;
+        }
+
+        h1 {
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+    .mail-to{
+        display: none;
+    }
+    .lower-section-left{
+        width: 100%;
+    }
+    .social-button-container{
+        width: 68%;
+    }
+    .decoration-stripe{
+        width: 14%;
+    }
+}
+
+@media (max-width: 750px) {
+    .text-section {
+        h1 {
+            font-size: 35px;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .picture-container{
+        height: 500px;
+    }
+    .curve{
+        height: 1233px;
+        top: 111px;
+    }
+}
+
+@media (max-width: 395px) {
+    .picture-container{
+        height: 450px;
+    }
+    .curve{
+        top: -19px;
+        height: 1439px;
+    }
+    .text-section {
+        h1 {
+            font-size: 30px;
+        }
+    }
+    .decoration-stripe{
+        width: 10%;
     }
 }

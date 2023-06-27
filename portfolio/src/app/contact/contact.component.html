@@ -7,18 +7,18 @@
         <p>Need a Frontend developer? <b>contact me!</b></p>
     </div>
     <div class="contact-form">
-        <form (ngSubmit)="onSubmit(formContact)" [formGroup]="contactForm" #formContact="ngForm">
+        <form (ngSubmit)="onSubmit(formContact)" [formGroup]="contactForm" #formContact="ngForm" autocomplete="no">
 
-            <input [ngClass]="{'invalid': nameValid == 2, 'valid': nameValid == 1}" formControlName="name" name="name"
-                type="text" placeholder="Name" id="inputName" >
+            <input autocomplete="no" [ngClass]="{'invalid': nameValid == 2, 'valid': nameValid == 1}" formControlName="name" name="name"
+                type="text" placeholder="Name" id="inputName" (keyup)="checkValidation()">
             <p [ngClass]="{'opacity': nameValid == 2}" class="error">Your name is required!</p>
 
-            <input [ngClass]="{'invalid': emailValid == 2, 'valid': emailValid == 1}" formControlName="email"
-                name="email" type="email" placeholder="Email" id="inputEmail" >
+            <input autocomplete="no" [ngClass]="{'invalid': emailValid == 2, 'valid': emailValid == 1}" formControlName="email"
+                name="email" type="email" placeholder="Email" id="inputEmail" (keyup)="checkValidation()">
             <p [ngClass]="{'opacity': emailValid == 2}" class="error">Please enter a valid email address!</p>
 
-            <textarea [ngClass]="{'invalid': messageValid == 2, 'valid': messageValid == 1}" formControlName="message"
-                name="message" cols="30" rows="4" placeholder="Message" id="inputMessage"></textarea>
+            <textarea autocomplete="no" [ngClass]="{'invalid': messageValid == 2, 'valid': messageValid == 1}" formControlName="message"
+                name="message" cols="30" rows="4" placeholder="Message" id="inputMessage" (keyup)="checkValidation()"></textarea>
             <p [ngClass]="{'opacity': messageValid == 2}" class="error">Please enter a message with atleast 10
                 characters!
             </p>

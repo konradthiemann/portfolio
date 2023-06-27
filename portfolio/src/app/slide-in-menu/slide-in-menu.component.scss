@@ -1,0 +1,33 @@
+.link-container{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: center;
+    a{
+        font-size: 23px;
+        font-weight: 400;
+        color: #FFFFFF;
+        text-decoration: none;
+        margin-left: 20px 0 ;
+        transition: 225ms ease-in-out;
+
+        &:hover{
+            color: #70E61C;
+            transition: 200ms ease-in-out;
+        }
+    }
+}
+
+.link-underline{
+    width: 55.5px;
+    height: 0px;
+    border-bottom: 3px solid #9747FF!important;
+    margin-top: 4px;
+    transition: 200ms ease-in-out ;
+    opacity: 0;
+}
+
+.active{
+    opacity: 1 !important;
+    transition: 200ms ease-in-out;
+}

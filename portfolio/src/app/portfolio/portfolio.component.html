@@ -13,7 +13,7 @@
             </div>
             <p class="description-text">{{project.description}}</p>
             <div class="url-container">
-                <a class="test-url"  (click)="getI(i)">Live test</a>
+                <a class="test-url"  href="{{project.url[0]}}">Live test</a>
                 <a class="git-url" href="{{project.url[1]}}" target="_blank">Git</a>
             </div>
         </div>
@@ -24,8 +24,3 @@
 </div>
 <img class="shadow-one" src="../../assets/img/Purple shadow portfolio section.svg">
 <img class="shadow-two" src="../../assets/img/Green shadow 3 (skills and portfolio section).svg" >
-
-
-
-<!-- flex-direction: row-reverse; -->
-<!-- text-align: left; -->

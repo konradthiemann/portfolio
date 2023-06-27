@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { HomeComponent } from './home/home.component';
+import { SlideInMenuComponent } from './slide-in-menu/slide-in-menu.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     ImprintComponent,
     HomeComponent,
+    SlideInMenuComponent,
   ],
   imports: [
     BrowserModule,

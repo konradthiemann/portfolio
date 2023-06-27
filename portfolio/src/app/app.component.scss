@@ -1,6 +1,6 @@
 app-header{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 4;
     background-color: #141D2F;
     margin-bottom: 110px;
@@ -21,3 +21,4 @@ app-imprint{
     height: calc(100vh - 400px);
     display: flex;
 }
+

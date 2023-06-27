@@ -49,3 +49,67 @@
     opacity: 1 !important;
     transition: 200ms ease-in-out;
 }
+
+.burger-menu{
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 770px){
+    .link-container{
+        display: none;
+    }
+
+    .burger-menu{
+        display: flex;
+    }
+}
+
+@media (max-width: 500px){
+    .header-container{
+        padding: 0 10%;
+    }
+}
+
+.open-burger-menu {
+    content: url("../../assets/img/Property 1=CLOSE FINAL.png");
+}
+
+.close-burger-menu {
+    content: url("../../assets/img/burger menu.png");
+}
+
+@keyframes openBurgerMenu{
+    0%{
+        background-image: url("../../assets/img/burger menu.png");
+    }
+    25%{
+        background-image: url("../../assets/img/Property 1=Transition.png");
+    }
+
+    50%{
+        background-image: url("../../assets/img/Property 1=close medium.png");
+    }
+
+    100%{
+        background-image: url("../../assets/img/Property 1=CLOSE FINAL.png");
+    }
+}
+
+@keyframes closeBurgerMenu{
+    0%{
+        background-image: url("../../assets/img/Property 1=CLOSE FINAL.png");
+    }
+    25%{
+        background-image: url("../../assets/img/Property 1=close medium.png");
+    }
+    
+    50%{
+        background-image: url("../../assets/img/Property 1=Transition.png");
+    }
+    100%{
+        background-image: url("../../assets/img/burger menu.png");
+    }
+}

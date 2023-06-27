@@ -31,17 +31,12 @@ export class ContactComponent {
   emailValid: any = 0;
   messageValid: any = 0;
 
-  constructor(private http: HttpClient) {
-    this.checkValidation();
-   }
+  constructor(private http: HttpClient) { }
 
 
   checkValidation() {
-    setInterval(() => {
-      this.checkForEmptyInput();
-      this.checkForValidInput();
-      
-    }, 10);
+    this.checkForValidInput();
+    this.checkForEmptyInput();
   }
 
   checkForEmptyInput() {
@@ -105,7 +100,7 @@ export class ContactComponent {
   timeOutSendMail() {
     setTimeout(() => {
       this.emailSent = false;
-    }, 2000)
+    }, 4000)
 
   }
 
@@ -125,6 +120,6 @@ export class ContactComponent {
       this.emailValid = 0;
       this.messageValid = 0;
       this.emailSent = false;
-    }, 2000)
+    }, 4000)
   }
 }

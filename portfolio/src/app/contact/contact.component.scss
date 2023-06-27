@@ -33,6 +33,7 @@
             padding: 15px 25px 15px 25px;
             border: 1px solid #9747FF;
             border-radius: 10px;
+            
 
             &::placeholder {
                 color: #FFFFFF;
@@ -174,7 +175,7 @@ input:-webkit-autofill {
 
 .message-sent-animation {
     animation-name: messageSentAnimation;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-fill-mode: ease-in-out;
 }
 
