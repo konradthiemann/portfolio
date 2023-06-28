@@ -11,3 +11,12 @@
         text-decoration: none;
     }
 }
+
+@media (max-width: 640px){
+    h1{
+        font-size: 40px;
+    }
+    .content-container{
+        padding: 10% 50px;
+    }
+}

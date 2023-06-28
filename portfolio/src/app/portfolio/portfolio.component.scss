@@ -18,6 +18,7 @@
 
 .technology-container {
     display: inline-flex;
+
     p {
         margin: 0 7px 0 0;
         font-weight: 400;
@@ -87,9 +88,12 @@
     width: calc(50% - 100px);
     display: flex;
     padding-left: 75px;
-    img{
+    height: 520px;
+    align-items: center;
+
+    img {
         width: 520px;
-        height: 533px;
+        height: 321px;
     }
 }
 
@@ -124,17 +128,133 @@
     flex-direction: inherit !important;
 }
 
-.shadow-one{
+.shadow-one {
     position: absolute;
     top: 50%;
     z-index: -1;
     left: -215px;
 }
 
-.shadow-two{
+.shadow-two {
     position: absolute;
     bottom: 0;
     width: 460px;
     transform: rotate(65deg);
     right: -190px;
+    z-index: -1;
+}
+
+@media (max-width: 1190px) {
+    .single-portfolio {
+        width: 100%;
+        padding: 0 !important;
+        flex-direction: column-reverse !important;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+
+    .description {
+        width: 100%;
+        padding: 0;
+        text-align: center !important;
+    }
+
+    .padding-left {
+        padding-left: 0 !important;
+    }
+
+    .padding-right {
+        padding-right: 0 !important;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+        height: 370px;
+        width: 585px;
+        align-items: center;
+        padding: 0 !important;
+    }
+
+    .shadow-one {
+        left: -550px;
+    }
+}
+
+@media (max-width: 670px) {
+    .headline-section {
+        h1 {
+            font-size: 75px;
+        }
+    }
+
+    .img {
+        width: 80%;
+    }
+
+    .decoration-stripe {
+        top: 44px;
+    }
+}
+
+@media (max-width: 595px) {
+    .headline-section {
+        h1 {
+            font-size: 55px;
+        }
+    }
+
+    .img {
+        img {
+            width: 445px;
+            height: unset;
+        }
+    }
+
+    .shadow-one {
+        left: -673px;
+    }
+}
+
+@media (max-width: 500px) {
+    .headline-section {
+        padding: 10%;
+        h1 {
+            font-size: 45px;
+        }
+    }
+    .img {
+        img {
+            width: 310px;
+        }
+    }
+    .url-container {
+        width: 300px;
+    }
+
+    .shadow-two {
+        width: 328px;
+    }
+    .technology-container{
+        p{
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-height: 670px) {
+    .img {
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+        height: 200px;
+        width: 585px;
+        align-items: center;
+        padding: 0 !important;
+    }
+
+    .description {
+        width: 360px;
+    }
 }

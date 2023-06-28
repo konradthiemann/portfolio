@@ -175,7 +175,7 @@
         height: 700px;
     }
 
-    .curve{
+    .curve {
         top: 435px;
     }
 }
@@ -227,24 +227,14 @@
 }
 
 @media (max-width: 1225px) {
-
-    // .text-section{
-    //     h2{
-    //         font-size: 19px;
-    //     }
-    //     h1{
-    //         font-size: 45px;
-    //     }
-    //     p{
-    //         font-size: 13px;
-    //     }
-    // }
     .picture-container {
         height: 600px;
     }
-    .upper-section{
+
+    .upper-section {
         flex-direction: row;
     }
+
     .curve {
         top: 300px;
         height: 1020px;
@@ -266,31 +256,35 @@
             font-size: 48px;
         }
     }
-    .upper-section{
+
+    .upper-section {
         flex-direction: column;
-        // padding-top: 0;
         overflow: hidden;
     }
-    .profile-shadows{
+
+    .profile-shadows {
         left: 50%;
         transform: translateX(-50%);
         top: 106px;
         width: 1013px;
     }
-    
-    .curve{
+
+    .curve {
         height: 1063px;
         z-index: 0;
         width: 2031px;
         top: 286px;
     }
-    .profile-shadows{
+
+    .profile-shadows {
         z-index: -1;
     }
-    .picture-container{
+
+    .picture-container {
         margin-bottom: 80px;
     }
-    .scroll-down-section{
+
+    .scroll-down-section {
         display: none;
     }
 }
@@ -341,16 +335,20 @@
             font-size: 13px;
         }
     }
-    .mail-to{
+
+    .mail-to {
         display: none;
     }
-    .lower-section-left{
+
+    .lower-section-left {
         width: 100%;
     }
-    .social-button-container{
+
+    .social-button-container {
         width: 68%;
     }
-    .decoration-stripe{
+
+    .decoration-stripe {
         width: 14%;
     }
 }
@@ -364,29 +362,69 @@
 }
 
 @media (max-width: 520px) {
-    .picture-container{
+    .picture-container {
         height: 500px;
     }
-    .curve{
+
+    .curve {
         height: 1233px;
         top: 111px;
     }
 }
 
 @media (max-width: 395px) {
-    .picture-container{
+    .picture-container {
         height: 450px;
     }
-    .curve{
+
+    .curve {
         top: -19px;
         height: 1439px;
     }
+
     .text-section {
         h1 {
             font-size: 30px;
         }
     }
-    .decoration-stripe{
+
+    .decoration-stripe {
         width: 10%;
+    }
+}
+
+@media (max-height: 670px) {
+    .lower-section {
+        height: 140px;
+        margin: 0;
+    }
+
+    .curve {
+        top: -79px;
+        height: 1439px;
+    }
+    .picture-container{
+        height: 377px;
+    }
+    .upper-section{
+        padding: 124px 100px;
+    }
+}
+
+@media (max-height: 900px){
+    .upper-section{
+        padding: 71px 100px;
+    }
+    .curve{
+        top: 75px;
+    }
+}
+
+@media (max-height: 851px){
+    .upper-section{
+        padding: 71px 100px;
+    }
+    .curve{
+        top: -58px;
     }
 }

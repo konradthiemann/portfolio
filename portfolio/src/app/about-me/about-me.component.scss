@@ -38,7 +38,67 @@
 
 .shadow{
     position: absolute;
+    z-index: -1;
     right: -250px;
     top: 0px;
     width: 570px;
+}
+
+@media (max-width: 1400px){
+    .decoration-stripe{
+        width: 200px;
+    }
+    .image-container{
+        margin-right: 200px;
+    }
+}
+
+@media (max-width: 1300px){
+    .decoration-stripe{
+        width: 150px;
+    }
+    .image-container{
+        margin-right: 150px;
+    }
+}
+
+@media (max-width: 1190px){
+    .decoration-stripe{
+        display: none;
+    }
+    .image-container{
+        display: none;
+    }
+    .text-container{
+        padding: 100px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 670px){
+    .text-container{
+        h1{
+            font-size: 75px;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 595px){
+    .text-container{
+        h1{
+            font-size: 55px;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .text-container{
+        padding: 10%;
+        h1{
+            font-size: 45px;
+        }
+    }
 }

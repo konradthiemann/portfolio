@@ -54,3 +54,59 @@
     left: -154px;
     top: 345px;
 }
+
+@media (max-width: 1190px){
+    .img-container{
+        width: 100%;
+        max-width: 100%;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    .single-skill{
+        margin: 0;
+    }
+    .description-skills{
+        width: 100%;
+        max-width: 100%;
+        height: 340px;
+    }
+    .decoration-stripe{
+        top: 65px;
+    }
+    .shadow{
+        top: 164px;
+    }
+}
+
+@media (max-width: 670px){
+    .description-skills{
+        h1{
+            font-size: 75px;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+    .decoration-stripe{
+        top: 55px;
+    }
+}
+
+@media (max-width: 595px){
+    .description-skills{
+        h1{
+            font-size: 55px;
+        }
+    }
+    .decoration-stripe{
+        top: 40px;
+    }
+}
+
+@media (max-width: 500px){
+    .description-skills{
+        h1{
+            font-size: 45px;
+        }
+    }
+}
