@@ -16,7 +16,7 @@ export class MySkillsComponent {
     {'url': '../../assets/img/skill-icons/css.svg', 'name': 'CSS'},
     {'url': '../../assets/img/skill-icons/api-logo.svg', 'name': 'Rest-Api'},
     {'url': '../../assets/img/skill-icons/scrum.svg', 'name': 'Scrum'},
-    {'url': '../../assets/img/skill-icons/wp.svg', 'name': 'Material Design'},
+    {'url': '../../assets/img/skill-icons/md.svg', 'name': 'Material Design'},
   ];
 
   doSmthg() {

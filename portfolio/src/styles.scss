@@ -126,34 +126,21 @@ textarea {
     }
 }
 
-// .link-container{
-//     display: flex;
-    
-//     a{
-//         font-size: 23px;
-//         font-weight: 400;
-//         color: #FFFFFF;
-//         text-decoration: none;
-//         margin-left: 30px;
-//         transition: 225ms ease-in-out;
-
-//         &:hover{
-//             color: #70E61C;
-//             transition: 200ms ease-in-out;
-//         }
-//     }
-// }
-
-// .link-underline{
-//     width: 55.5px;
-//     height: 0px;
-//     border-bottom: 3px solid #9747FF!important;
-//     margin-top: 4px;
-//     transition: 200ms ease-in-out ;
-//     opacity: 0;
-// }
-
-// .active{
-//     opacity: 1 !important;
-//     transition: 200ms ease-in-out;
-// }
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(20, 29, 47, 0.8);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(123, 71, 178); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #514a9a; 
+  }

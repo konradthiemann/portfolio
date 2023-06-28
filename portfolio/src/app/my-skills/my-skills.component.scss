@@ -11,7 +11,8 @@
     width: 90px;
     margin: 0 150px 60px 0;
     align-items: center;
-
+    gap: 12px;
+    text-align: center;
     img {
         height: 55px;
         width: 55px;
@@ -52,7 +53,7 @@
     z-index: -1;
     width: 460px;
     left: -154px;
-    top: 345px;
+    top: 210px;
 }
 
 @media (max-width: 1190px){
@@ -71,7 +72,7 @@
         height: 340px;
     }
     .decoration-stripe{
-        top: 65px;
+        top: 152px;
     }
     .shadow{
         top: 164px;
@@ -88,7 +89,7 @@
         }
     }
     .decoration-stripe{
-        top: 55px;
+        top: 146px;
     }
 }
 
@@ -99,7 +100,7 @@
         }
     }
     .decoration-stripe{
-        top: 40px;
+        top: 132px;
     }
 }
 
@@ -108,5 +109,9 @@
         h1{
             font-size: 45px;
         }
+    }
+    .decoration-stripe{
+        top: 124px;
+        width: 24px;
     }
 }
