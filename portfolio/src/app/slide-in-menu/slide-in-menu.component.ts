@@ -10,10 +10,9 @@ export class SlideInMenuComponent {
 
   constructor(private sharedService: SharedService) {}
 
-  closeBurgerMenu(sectionName: any){
+  closeBurgerMenu(){
     this.sharedService.burgerMenuOpen = false;
-    // window.location.href = 'konrad-thiemann.de';
-    document.getElementById(`${sectionName}`)!.scrollIntoView({behavior: 'smooth'});
+    // document.getElementById(`${sectionName}`)!.scrollIntoView({behavior: 'smooth'});
 
     let slideMenu = document.getElementById('slide-in-menu');
     let burgerMenu:any = document.getElementById('burger-menu');
