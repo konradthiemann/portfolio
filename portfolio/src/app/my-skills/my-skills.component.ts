@@ -19,9 +19,6 @@ export class MySkillsComponent {
     {'url': '../../assets/img/skill-icons/md.svg', 'name': 'Material Design'},
   ];
 
-  doSmthg() {
-    console.log(this.skills);
-  }
   constructor() { }
 
 }

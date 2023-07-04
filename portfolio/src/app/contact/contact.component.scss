@@ -27,13 +27,9 @@
         input {
             outline: none;
             color-scheme: dark;
-            background-color: #141D2F;
-            width: 568px;
-            height: 50px;
-            padding: 15px 25px 15px 25px;
-            border: 1px solid #9747FF;
-            border-radius: 10px;
-
+            width: 90%;
+            background-color: rgba($color: #000000, $alpha: 0);
+            border: none;
 
             &::placeholder {
                 color: #FFFFFF;
@@ -42,21 +38,14 @@
                 font-family: 'Poppins';
                 font-weight: 400;
             }
-
-            &:hover {
-                border: 1px solid #1CDAE6;
-                background-color: rgba(0, 0, 0, 0);
-            }
         }
 
         textarea {
             outline: none;
             background-color: rgba($color: #000000, $alpha: 0);
-            width: 568px;
-            height: 200px;
-            padding: 15px 25px 15px 25px;
-            border: 1px solid #9747FF;
-            border-radius: 10px;
+            border: none;
+            width: 90%;
+            height: 100%;
             color: #FFFFFF;
             resize: none;
 
@@ -67,16 +56,38 @@
                 font-family: 'Poppins';
                 font-weight: 400;
             }
-
-            &:hover {
-                border: 1px solid #1CDAE6;
-            }
         }
-
         p {
             width: 100%;
         }
     }
+}
+
+.input-wrapper {
+    display: flex;
+    background-color: #141D2F;
+    width: 568px;
+    height: 50px;
+    padding: 15px 25px 15px 25px;
+    border: 1px solid #9747FF;
+    border-radius: 10px;
+    &:hover {
+        border: 1px solid #1CDAE6;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+.textarea-wrapper {
+    display: flex;
+    width: 568px;
+    height: 200px;
+    padding: 15px 25px 15px 25px;
+    border: 1px solid #9747FF;
+    border-radius: 10px;
+    &:hover {
+        border: 1px solid #1CDAE6;
+    }
+    
 }
 
 input:-webkit-autofill {
@@ -101,6 +112,7 @@ input:-webkit-autofill {
     img {
         width: 40px;
         height: 40px;
+
         &:hover {
             content: url(../../assets/img/go-up-button-green.svg);
         }
@@ -134,25 +146,39 @@ input:-webkit-autofill {
     opacity: 0;
 }
 
-.invalid {
-    background: url("../../assets/img/!.png") no-repeat right 25px top 25px !important;
-    border-color: #E61C40 !important;
+.opacity {
+    opacity: 1 !important;
+}
 
-    input:-internal-autofill-selected {
-        background-color: rgba(0, 0, 0, 0) !important;
-        color: white !important;
+.opacity-0 {
+    opacity: 0 !important;
+}
+
+.image-container{
+    position: relative;
+    width: 10%;
+    height: 50px;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        opacity: 0 ;
     }
 }
 
+.default {
+    border-color: #9747FF !important;
+}
+
+.invalid {
+    border-color: #E61C40 !important;
+}
+
 .valid {
-    background: url("../../assets/img/check.png") no-repeat right 25px top 25px !important;
     border-color: #70E61C !important;
-
-    input:-internal-autofill-selected {
-        background-color: rgba(0, 0, 0, 0) !important;
-        color: white !important;
-    }
-
 }
 
 .message-send-container {
@@ -235,11 +261,11 @@ input:-webkit-autofill {
         form {
             width: 70%;
 
-            input {
+            .input-wrapper {
                 width: 100%;
             }
 
-            textarea {
+            .textarea-wrapper {
                 width: 100%;
             }
 
@@ -254,7 +280,8 @@ input:-webkit-autofill {
     h1 {
         font-size: 75px;
     }
-    .decoration-stripe{
+
+    .decoration-stripe {
         top: 40px;
         width: 43px;
     }
@@ -264,7 +291,8 @@ input:-webkit-autofill {
     h1 {
         font-size: 55px;
     }
-    .decoration-stripe{
+
+    .decoration-stripe {
         top: 29px;
         width: 37px;
     }
@@ -274,7 +302,8 @@ input:-webkit-autofill {
     h1 {
         font-size: 45px;
     }
-    .decoration-stripe{
+
+    .decoration-stripe {
         top: 22px;
         width: 21px;
     }

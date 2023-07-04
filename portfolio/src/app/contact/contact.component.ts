@@ -31,8 +31,7 @@ export class ContactComponent {
   emailValid: any = 0;
   messageValid: any = 0;
 
-  constructor(private http: HttpClient) { }
-
+  constructor(private http: HttpClient) {}
 
   checkValidation() {
     this.checkForValidInput();
@@ -44,10 +43,10 @@ export class ContactComponent {
     let email: any = document.getElementById("inputEmail");
     let message: any = document.getElementById("inputMessage");
 
-    if (name.value === "") {
+    if (name.value === "" ) {
       this.nameValid = 0;
     };
-    
+
     if (email.value === "") {
       this.emailValid = 0;
     };
@@ -56,10 +55,11 @@ export class ContactComponent {
       this.messageValid = 0;
     };
 
-    
+
   }
 
   checkForValidInput() {
+    
     if (this.contactForm.controls['name'].status === 'VALID') {
       this.nameValid = 1;
     }
@@ -89,7 +89,6 @@ export class ContactComponent {
             this.timeOutSendMail();
           },
           error: (error) => {
-            console.log(error);
           },
         });
     } else {

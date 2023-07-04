@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { HomeComponent } from './home/home.component';
 import { SlideInMenuComponent } from './slide-in-menu/slide-in-menu.component';
+import { SharedService } from './shared.service';
 
 
 @NgModule({
@@ -38,7 +39,7 @@ import { SlideInMenuComponent } from './slide-in-menu/slide-in-menu.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

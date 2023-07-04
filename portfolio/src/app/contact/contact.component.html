@@ -7,18 +7,40 @@
         <p>Need a Frontend developer? <b>contact me!</b></p>
     </div>
     <div class="contact-form">
-        <form (ngSubmit)="onSubmit(formContact)" [formGroup]="contactForm" #formContact="ngForm" autocomplete="no">
+        <form (ngSubmit)="onSubmit(formContact)" [formGroup]="contactForm" #formContact="ngForm">
 
-            <input autocomplete="no" [ngClass]="{'invalid': nameValid == 2, 'valid': nameValid == 1}" formControlName="name" name="name"
-                type="text" placeholder="Name" id="inputName" (keyup)="checkValidation()">
+            <div class="input-wrapper" [ngClass]="{'invalid': nameValid == 2, 'valid': nameValid == 1, 'default': nameValid == 0}">
+                <input 
+                    formControlName="name" name="name" type="text" placeholder="Name" id="inputName"
+                    (keyup)="checkValidation()">
+                <div class="image-container">
+                    <img [ngClass]="{'opacity': nameValid == 1, 'opacity-0': nameValid == 0}" src="../../assets/img/check.png">
+                    <img [ngClass]="{'opacity': nameValid == 2, 'opacity-0': nameValid == 0}" src="../../assets/img/!.png">
+                </div>
+            </div>
             <p [ngClass]="{'opacity': nameValid == 2}" class="error">Your name is required!</p>
 
-            <input autocomplete="no" [ngClass]="{'invalid': emailValid == 2, 'valid': emailValid == 1}" formControlName="email"
-                name="email" type="email" placeholder="Email" id="inputEmail" (keyup)="checkValidation()">
+            <div class="input-wrapper" [ngClass]="{'invalid': emailValid == 2, 'valid': emailValid == 1, 'default': emailValid == 0}">
+                <input 
+                    formControlName="email" name="email" type="email" placeholder="Email" id="inputEmail"
+                    (keyup)="checkValidation()">
+                <div class="image-container">
+                    <img [ngClass]="{'opacity': emailValid == 1, 'opacity-0': emailValid == 0}" src="../../assets/img/check.png">
+                    <img [ngClass]="{'opacity': emailValid == 2, 'opacity-0': emailValid == 0}" src="../../assets/img/!.png">
+                </div>
+
+            </div>
             <p [ngClass]="{'opacity': emailValid == 2}" class="error">Please enter a valid email address!</p>
 
-            <textarea autocomplete="no" [ngClass]="{'invalid': messageValid == 2, 'valid': messageValid == 1}" formControlName="message"
-                name="message" cols="30" rows="4" placeholder="Message" id="inputMessage" (keyup)="checkValidation()"></textarea>
+            <div class="textarea-wrapper" [ngClass]="{'invalid': messageValid == 2, 'valid': messageValid == 1, 'default': messageValid == 0}">
+                <textarea 
+                    formControlName="message" name="message" cols="30" rows="4" placeholder="Message" id="inputMessage"
+                    (keyup)="checkValidation()"></textarea>
+                <div class="image-container">
+                    <img [ngClass]="{'opacity': messageValid == 1, 'opacity-0': messageValid == 0}" src="../../assets/img/check.png">
+                    <img [ngClass]="{'opacity': messageValid == 2, 'opacity-0': messageValid == 0}" src="../../assets/img/!.png">
+                </div>
+            </div>
             <p [ngClass]="{'opacity': messageValid == 2}" class="error">Please enter a message with atleast 10
                 characters!
             </p>

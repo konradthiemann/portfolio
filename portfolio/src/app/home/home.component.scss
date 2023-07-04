@@ -1,11 +1,14 @@
 app-intro {
     position: relative;
-    // height: calc(100vh - 100px);
+    height: calc(100vh - 110px);
     display: flex;
     flex-direction: column;
-    top: 110px;
+    // top: 110px;
+    bottom: 0;
     overflow: hidden;
-    min-height: calc(100vh - 100px);
+    padding-top: 110px;
+    // min-height: calc(100vh - 100px);
+    position: relative;
 }
 
 app-about-me {
@@ -24,7 +27,9 @@ app-my-skills {
     z-index: 3;
     justify-content: space-between;
     padding: 280px 100px 0 100px;
-    overflow-x: hidden;
+    // overflow-x: hidden;
+    // height: 600px;
+    padding: 150px 100px;
 }
 
 app-portfolio {
@@ -71,9 +76,9 @@ app-slide-in-menu {
 
 
 @media (max-width: 1190px) {
-    app-intro {
-        align-items: center;
-    }
+    //app-intro {
+    //    align-items: center;
+    //}
 
     app-about-me {
         align-items: center;
@@ -84,29 +89,25 @@ app-slide-in-menu {
         width: calc(98vw - 186px);
         padding: 100px 100px 100px 100px;
     }
+
     app-portfolio {
         padding: 100px 10% !important;
     }
+
     app-contact {
         padding: 0 10% !important;
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
     app-my-skills {
         padding: 100px 10% 100px 10%;
         width: calc(98vw - 20%);
     }
 }
 
-@media (max-height: 670px) {
-    app-intro {
-       height: 100%;
-    }
-}
-
 // @media (max-height: 670px) {
 //     app-intro {
-//        top: 0;
+//        height: 100%;
 //     }
 // }

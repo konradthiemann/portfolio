@@ -1,4 +1,6 @@
-
+app-root{
+    overflow-x: hidden;
+}
 
 html {
     scroll-behavior: smooth;
@@ -8,6 +10,7 @@ body {
     font-family: 'Poppins';
     background-color: #141D2F;
     margin: 0;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -124,6 +127,10 @@ textarea {
         height: 30px;
         cursor: pointer;
     }
+}
+
+.overflow-hidden{
+    overflow: hidden;
 }
 
 ::-webkit-scrollbar {
