@@ -16,6 +16,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { HomeComponent } from './home/home.component';
 import { SlideInMenuComponent } from './slide-in-menu/slide-in-menu.component';
 import { SharedService } from './shared.service';
+import { ImprintMainComponent } from './imprint-main/imprint-main.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { SharedService } from './shared.service';
     ImprintComponent,
     HomeComponent,
     SlideInMenuComponent,
+    ImprintMainComponent,
   ],
   imports: [
     BrowserModule,
