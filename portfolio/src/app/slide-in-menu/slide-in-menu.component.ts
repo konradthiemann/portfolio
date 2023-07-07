@@ -12,8 +12,6 @@ export class SlideInMenuComponent {
 
   closeBurgerMenu(){
     this.sharedService.burgerMenuOpen = false;
-    // document.getElementById(`${sectionName}`)!.scrollIntoView({behavior: 'smooth'});
-
     let slideMenu = document.getElementById('slide-in-menu');
     let burgerMenu:any = document.getElementById('burger-menu');
     slideMenu!.classList.remove("slide-in-menu-open");
